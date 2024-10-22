@@ -1,6 +1,6 @@
 {
   "name": "shiki-mdx",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -8,6 +8,10 @@
     "/dist",
     "package.json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrmota/shiki-mdx"
+  },
   "scripts": {
     "build": "tsc && tsc --project tsconfig.cjs.json",
     "watch": "tsc -w && tsc -w --project tsconfig.cjs.json",
