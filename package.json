@@ -1,6 +1,6 @@
 {
-  "name": "shiki-mdx",
-  "version": "0.0.1",
+  "name": "@henrmota/shiki-mdx",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,9 +19,12 @@
   },
   "sideEffects": false,
   "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "shiki",
+    "mdx-remote"
+  ],
+  "author": "Henrique Mota",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/jest": "^29.5.13",

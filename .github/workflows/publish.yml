@@ -17,7 +17,18 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - run: pnpm install
-      - run: npm version patch
+      - name: Commit changes if any
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ `git status --porcelain` ]]; then
+            git add .
+            git commit -m "Auto-commit: Save uncommitted changes before versioning"
+          fi
+
+      - run: npm version patch -m "Upgrade version to %s [skip ci]"
+
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
