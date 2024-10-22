@@ -7,7 +7,7 @@ A plugin for MDX that utilizes Shiki for syntax highlighting. This package is de
 To install the package, you can use npm or yarn. Make sure to also install Shiki as a peer dependency.
 
 ```bash
-npm install @henmota/shiki-mdx shiki
+npm install @henmota/shiki-mdx shiki rehype-raw
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ const { frontmatter, mdxContent } = await compileMDX({
         remarkGfm,
         [remarkShikiMdx, { theme: "vitesse-dark" }],
       ],
-      rehypePlugins: [rehypeKatex, rehypeRaw],
+      rehypePlugins: [rehypeRaw],
       format: "mdx",
     },
     parseFrontmatter: true,
