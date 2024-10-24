@@ -55,3 +55,6 @@ This package requires shiki as a peer dependency. Ensure that it is installed in
 ## Supported Themes
 
 Shiki supports a variety of themes. For a full list of available themes, check the Shiki documentation.
+
+
+www.lerp.dev
